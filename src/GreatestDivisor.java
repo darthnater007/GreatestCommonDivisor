@@ -14,17 +14,20 @@ public class GreatestDivisor {
 		System.out.print("Enter an integer:  ");
 		int y = sc.nextInt();
 		System.out.print("Enter another integer:  ");
-		int x = sc.nextInt();
-			while (x != y)
+		int x = sc.nextInt();	
+		
+		while (x != y)
 			{
 				if (y > x) y -= x;
 				else x-=y;
 			}
-			
 			System.out.println(x + " is GCD.");
+			
 			System.out.print("Continue?  y/n:  ");
 			choice = sc.next();
 		}
+		sc.close();
+		System.out.println("Bye!");
 
 	}
 
